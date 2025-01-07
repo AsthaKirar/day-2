@@ -1,8 +1,10 @@
-const dotenv = require('dotenv')
-dotenv.config()
+const dotenv = require('dotenv');
+dotenv.config();
 
-config_config = {
-    PORT: process.env.PORT
-}
-const config = Object.freeze(_config)
-module.exports = config
+_config = {
+    PORT: process.env.PORT,
+    MONGO_URI: process.env.MONGO_URI
+};
+
+const config = Object.freeze(_config);
+module.exports = config;
